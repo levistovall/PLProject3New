@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+    <title>Title</title>
+    <style type="text/css">
+        #clear {
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome to the Person Tester Application</h1>
+<div>
+    <form id="createform">
+        <p>Create customer or employee?</p>
+        <select id="choice">
+            <option value="c">Customer</option>
+            <option value="e">Employee</option>
+        </select>
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input id="fname" type="text" name="fname"></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input id="lname" type="text" name="lname"></td>
+            </tr>
+            <tr>
+                <td>Email Address:</td>
+                <td><input id="email" type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td id="spec_num">Customer Number:</td>
+                <td><input id="spec_input" type="text" name="spec_num"></td>
+            </tr>
+            <tr>
+                <td><input id="create" type="button" value="Create Customer"></td>
+                <td><input id="clear" type="button" value="Reset/New Entry"></td>
+            </tr>
+        </table>
+    </form>
+
+
+    <p id="summary"></p>
+</div>
+<script type="text/javascript" src="person_app.js"></script>
+</body>
+</html>
